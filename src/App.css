@@ -1,0 +1,149 @@
+.App {
+  background-color: #282c34;
+  max-width: 100vw;
+  height: 100vh;
+  padding: 50px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.app-main {
+  position: relative;
+}
+
+.Title {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2, h1 {
+  margin: 0 0 25px;
+  color: white;
+}
+
+h3 {
+  color: #fafafa;
+}
+
+ul {
+  list-style: none;
+}
+
+.list {
+  box-sizing: border-box;
+  max-width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 300px;
+  gap: 25px;
+  font-size: 14px;
+  color: white;
+}
+
+.gifCard {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-decoration: none;
+}
+
+.gifCard:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.gifCard img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  flex-grow: 1;
+}
+
+.gifCard h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.loading {
+  width: calc(100vw - 100px);
+  height: calc(80vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading h2 {
+  margin: 0;
+}
+
+.heroSearch {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.heroSearch h1 {
+  margin: 0;
+}
+
+.trends {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.trendItem {
+  font-weight: normal;
+  padding: 10px;
+}
+
+.trendItem:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.searchBar {
+  width: 100%;
+  display: flex;
+}
+
+.searchBar input {
+  font-size: 14px;
+  padding: 12.5px 25px;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: #f9f9f9;
+}
+
+.searchBar input:focus {
+  background-color: #ffffff;
+}
+
+button {
+  font-size: 14px;
+  padding: 25px 50px;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: #0589ff;
+  cursor: pointer;
+}
